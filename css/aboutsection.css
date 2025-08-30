@@ -7,9 +7,15 @@
     align-items: center;
 }
 
+
+/* Profile Container */
+
 .profile-container {
     position: relative;
 }
+
+
+/* Profile Image */
 
 .profile-img {
     width: 100%;
@@ -23,6 +29,9 @@
     box-shadow: 0 15px 40px rgba(0, 0, 0, 0.4);
 }
 
+
+/* About Text */
+
 .about-text h3 {
     margin-bottom: 1rem;
     font-size: 1.8rem;
@@ -31,4 +40,29 @@
 .about-text p {
     margin-bottom: 1.5rem;
     opacity: 0.9;
+}
+
+
+/* Mobile Responsive */
+
+@media screen and (max-width: 768px) {
+    .about-content {
+        grid-template-columns: 1fr;
+        /* Stack items vertically */
+        gap: 2rem;
+        text-align: center;
+        /* Center text for mobile */
+    }
+    .about-text h3 {
+        font-size: 1.5rem;
+    }
+    .about-text p {
+        font-size: 1rem;
+        margin-bottom: 1rem;
+    }
+    .profile-img {
+        max-width: 250px;
+        margin: 0 auto;
+        /* Center image */
+    }
 }

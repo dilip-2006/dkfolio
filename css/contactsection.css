@@ -115,3 +115,65 @@ textarea.form-control {
     color: #ff5f56;
     border: 1px solid rgba(255, 95, 86, 0.2);
 }
+
+@media (max-width: 768px) {
+    .contact-content {
+        grid-template-columns: 1fr;
+        /* single column */
+        gap: 2rem;
+    }
+    .contact-info {
+        order: 1;
+        /* show info first */
+    }
+    .contact-form {
+        order: 2;
+        margin-right: 0;
+        /* remove right spacing */
+    }
+    .contact-icon {
+        margin-top: 0.5rem;
+        margin-left: 0;
+        width: 35px;
+        height: 35px;
+        font-size: 1rem;
+    }
+    .contact-links {
+        margin-top: 2rem;
+        margin-left: 0;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+    .social-link {
+        width: 45px;
+        height: 45px;
+        font-size: 1rem;
+    }
+    .form-control {
+        margin-right: 0;
+        padding: 0.9rem;
+        font-size: 0.95rem;
+    }
+    textarea.form-control {
+        min-height: 120px;
+    }
+    .submit-btn {
+        align-self: center;
+        /* center button on mobile */
+    }
+}
+
+@media (max-width: 480px) {
+    .contact-links {
+        gap: 0.5rem;
+    }
+    .social-link {
+        width: 40px;
+        height: 40px;
+        font-size: 0.9rem;
+    }
+    .form-control {
+        font-size: 0.9rem;
+        padding: 0.8rem;
+    }
+}

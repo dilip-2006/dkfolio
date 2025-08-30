@@ -4,7 +4,7 @@
 /* Container responsiveness */
 
 .container {
-    padding: 0 1rem;
+    padding: 0 rem;
 }
 
 @media (min-width: 576px) {
@@ -136,8 +136,8 @@ h2 {
         padding: 15px;
     }
     .robot-container {
-        width: 60px;
-        height: 60px;
+        width: 10px;
+        height: 150px;
     }
     /* Dock responsiveness */
     .dock {
@@ -190,6 +190,8 @@ h2 {
     /* Navigation improvements */
     .dock-container {
         bottom: 10px;
+        scale: 0.7;
+        right: 200px;
     }
     .dock {
         padding: 6px 10px 8px 10px;
@@ -278,18 +280,24 @@ h2 {
     }
     /* Experience section improvements */
     .experience-item {
-        width: 200px;
+        width: 500px;
         padding: 12px;
         font-size: 0.9rem;
+        margin: center;
+        margin-left: -60px;
+        margin-right: -60px;
     }
     .experience-title {
         font-size: 16px;
+        margin: center;
     }
     .experience-date {
         font-size: 12px;
+        margin: center;
     }
     .experience-description {
         font-size: 12px;
+        margin: center;
     }
     /* Section spacing */
     section {
